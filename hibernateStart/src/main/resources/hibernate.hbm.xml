@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="domain.User" table="TB_USER">
+		<id name="userId" column="user_id" />
+		<property name="name" column="name" />
+		<property name="address" column="address" />
+	</class>
+	
+	<class name="domain.Device" table="TB_Device">
+		<id name="userId" column="user_id" />
+		<property name="deviceId" column="device_id" />
+		<property name="phoneNumber" column="phoneNumber" />
+	</class>
+	
+</hibernate-mapping>
